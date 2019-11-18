@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Number Guesser!</h1>
+    </header>
+    <div class='round_det'>
+        <p>
+            <h2>Round: <span id='input-round'>0</span></h2>
+        </p>
+        <p>
+            <h3>Target: <span id='input-target-number'>0</span></h3>
+        </p>
+    </div>
+    <div class='guessing-area'>
+        <div class='computer-guess-area'>
+            <div class='guessing-title'>
+                <h4><span id='computer-title'>Computer</span></h4>
+                <p class='scoring-area'>Score: <span id='computer-score'>0</span></p>
+            </div>
+            <div class='guess-act'>
+                <p class='guess'><span id='computer-guess'>?</span></p>
+            </div>
+            <p class='winning-text'><span id='computer-winner'></span></p>
+
+        </div>
+        <div class='human-guess-area'>
+            <div class='guessing-title'>
+                <h4 id='human-title'>Human</h4>
+                <p class='scoring-area'>Score: <span id='human-score'>0</span></p>
+
+            </div>
+            <div class='input-area'>
+                <input type='number' id='human-guess' min=0 max=9 value=0>
+
+            </div>
+            <div class='button-controls'>
+                <button class='button-control left' id='subtract' disabled>-</button>
+                <button class='button-control right' id='addition'>+</button>
+            </div>
+            <button class='button winning-text' id='guess'>Make a guess</button>
+
+
+
+        </div>
+        <p class='winner-message'><span id='human-winner'></span></p>
+
+
+    </div>
+    <div class='advance-round-container'>
+        <button class='button' id='next-round' disabled>Next Round!</button>
+    </div>
+    <footer>
+        <section class="instructions">
+            <div class="instruction"><span class="section-heading">
+                    Step 1 </span>
+                <p>
+                    Input a number between 0 and 9
+                </p>
+            </div>
+            <div class="instruction"><span class="section-heading">
+                    Step 2 </span>
+                <p>
+                    Make Guess
+                </p>
+            </div>
+            <div class="instruction"><span class="section-heading">
+                    Step 3 </span>
+                <p>
+                    Click on "Next Round" to play again
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
